@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #DDD;
+    background-color: rgb(27, 26, 26);
 }
 
 .App {
@@ -21,6 +21,7 @@ body {
     background-color: #313131;
     display: block;
     margin: 0px auto;
+    width: 350px;
     padding: 50px;
     border-radius: 16px;
     box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
@@ -36,7 +37,7 @@ body {
 
 .c-player > p {
     color: #AAA;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-weight: 600;
 }
@@ -55,9 +56,9 @@ body {
     display: block;
     margin: 50px auto;
     width: 100%;
-    max-width: 250px;
+    max-width: 175px;
     border-radius: 50%;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.2);
 }
 
 .c-player--details .details-img:after {
@@ -69,12 +70,12 @@ body {
     right: -25px;
     bottom: -25px;
     border-radius: 50%;
-    border: 3px dashed rgba(255, 206, 0, 1);
+    border: 3px dashed rgb(84, 101, 255);
 }
 
 .c-player--details .details-title {
     color: #EEE;
-    font-size: 28px;
+    font-size: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
     text-align: center;
     margin-bottom: 10px;
@@ -82,7 +83,7 @@ body {
 
 .c-player--details .details-artist {
     color: #AAA;
-    font-size: 20px;
+    font-size: 17px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
     text-align: center;
     margin-bottom: 20px;
@@ -98,12 +99,12 @@ body {
 .c-player--controls .play-btn {
     display: flex;
     margin: 0 30px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 50%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.2), inset -4px -4px 10px rgba(0, 0, 0, 0.2), inset 4px 4px 10px rgba(255, 255, 255, 0.2);
     border: none;
     outline: none;
-    background-color: #FFCE00;
+    background-color: rgb(84, 101, 255);
     color: #FFF;
     font-size: 24px;
     cursor: pointer;

@@ -1,31 +1,67 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import Player from './components/Player/Player';
 
 function App() {
   const [songs] = useState([
     {
-      title: "Forget me too ft. Halsey",
-      artist: "Machine Gun Kelly",
-      img_src: "./images/song-1.jpg",
-      src: "./music/on-n-on.mp3"
+      title: "Unbreakable",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Unbreakable.mp3"
     },
     {
-      title: "Song 2",
-      artist: "Artist 2",
-      img_src: "./images/song-2.jpg",
-      src: "./music/somebody-new.mp3"
+      title: "Hard Rock",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Hard Rock.mp3"
     },
     {
-      title: "Song 3",
-      artist: "Artist 3",
-      img_src: "./images/song-3.jpg",
-      src: "./music/on-n-on.mp3"
+      title: "Can't Stop Me",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Can't Stop Me.mp3"
     },
     {
-      title: "Song 4",
-      artist: "Artist 4",
-      img_src: "./images/song-4.jpg",
-      src: "./music/somebody-new.mp3"
+      title: "Let's Rock",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Lets Rock.mp3"
+    },
+    {
+      title: "Be Faster",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Be Faster.mp3"
+    },
+    {
+      title: "Fatality Racer",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Fatality Racer.mp3"
+    },
+    {
+      title: "Rage Machine",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Rage Machine.mp3"
+    },
+    {
+      title: "No Way Back",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/No Way Back.mp3"
+    },
+    {
+      title: "Time For Action",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Time For Action.mp3"
+    },
+    {
+      title: "Heart of the Warrior",
+      artist: "Andy Ray",
+      img_src: "./images/album-cover.jpg",
+      src: "./music/Heart of the Warrior.mp3"
     }
   ]);
 
@@ -44,10 +80,10 @@ function App() {
 
   return (
     <div className="App">
-      <Player 
-        currentSongIndex={currentSongIndex} 
-        setCurrentSongIndex={setCurrentSongIndex} 
-        nextSongIndex={nextSongIndex} 
+      <Player
+        currentSongIndex={currentSongIndex}
+        setCurrentSongIndex={setCurrentSongIndex}
+        nextSongIndex={nextSongIndex}
         songs={songs}
       />
     </div>
