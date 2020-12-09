@@ -1,17 +1,16 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import { useAuth0 } from '@auth0/auth0-react';
 
 
+const logout = (event) => {
+    window.location.reload();
+    console.log('clicked')
+}
 const LogoutButton = () => {
-    const { logout, isAuthenticated } = useAuth0();
-
     return (
-        isAuthenticated && (
-            <Button variant="contained" onClick={() => logout()}>
-                Logout
-            </Button>
-        )
+        <Button variant="contained" id='logout' onClick={logout}>
+            Logout
+        </Button>
     )
 }
 
